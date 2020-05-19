@@ -23,7 +23,10 @@ myGraph.performDFS(1,4) -> perfrom DFS from starting vertex to end vertex
 
 Perform BFS on graph 
 myGraph.performBFS() -> perform BFS omn whole graph
-myGraph.performBFS(start,end) -> perfrom BFS from starting vertex to end vertex
+myGraph.performBFS(1,4) -> perfrom BFS from starting vertex to end vertex
+
+To add link between two vertex
+myGraph.createDirectedLink([2,3]) -> add edge between vertices
 
 
 

@@ -1,0 +1,22 @@
+{
+  "name": "graph-module",
+  "version": "1.0.0",
+  "description": "Api to create graph data structure",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kratika0907/Graph-Module.git"
+  },
+  "author": "Kratika Chowdhary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kratika0907/Graph-Module/issues"
+  },
+  "homepage": "https://github.com/Kratika0907/Graph-Module#readme"
+}
