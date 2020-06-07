@@ -1,32 +1,64 @@
 Graph Module 
 
-A graph module which provides easy to use api to create directed unweighted graph data structure and perform traversals 
 
-Features 
+Quick Start 
 
-createGraph -> API to create graph
-performDFS(start,end) -> API to perform Depth First Search on graph 
-performBFS(start, end) -> API to perfrom Breadth First Search om graph
+A easy to use graph module which provides api's for directed unweighted graph. The module camn be easily integrated with your existing codebase. To create a Graph object this module provide Graph class through which you camn instantiate your own graph object.
 
-How to use 
+API Reference 
 
-Create a new instance for graph class and pass number of vertices 
-let myGraph = new Graph(5); 
+1. createGraph()
+
+createGraph function creates the graph from the 2-D matrix provided.This function take 2-D matrix as its parameter. 
+
+Parameter 
+
+1. 2-D Matrix - This is the 2-D matrix in which each element denotes the edge between the two vertx. The vertex should be between from the range 0 to the total vertex specified.
+
+Usage 
 
 Pass 2-D array which consist of edges information 
-let arr = [[0,1], [1,3], [1,4]]
+let arr = [[0,1], [1,3], [1,4]];
 myGraph.createGraph(arr);
 
-Perform DFS on graph 
+2. perfromDFS()
+
+This function peforms the Depth first search on the graph. It takes two parameters which are optional.
+
+Parameters
+
+1. Start - This is the first argument that you will pass to a function. It denotes the starting vertex from where the graph traversal would start.This parameter is optional and by default it will start from vertex 0
+
+2. End - This is the second argument that you will pass to a function. It denotes the ending vertex where you want to stop the traversal. THis parameter is optional and by default it will cover all the vertex.
+
+Usage
+
 myGraph.perfromDFS() -> perform DFS on whole graph 
 myGraph.performDFS(1,4) -> perfrom DFS from starting vertex to end vertex
 
-Perform BFS on graph 
-myGraph.performBFS() -> perform BFS omn whole graph
-myGraph.performBFS(1,4) -> perfrom BFS from starting vertex to end vertex
+2. perfromBFS()
 
-To add link between two vertex
-myGraph.createDirectedLink([2,3]) -> add edge between vertices
+This function peforms the Breadth first search on the graph. It takes two parameters which are optional.
+
+Parameters
+
+1. Start - This is the first argument that you will pass to a function. It denotes the starting vertex from where the graph traversal would start.This parameter is optional and by default it will start from vertex 0
+
+2. End - This is the second argument that you will pass to a function. It denotes the ending vertex where you want to stop the traversal. THis parameter is optional and by default it will cover all the vertex.
+
+3. createDirectedLink()
+
+This function creates a directed link between the vertex specified. It takes a array with start and end vertex between whom you want to have a edge.
+
+Usage
+myGraph.createDirectedLink([2,3])
+
+
+
+
+
+
+
 
 
 
