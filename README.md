@@ -5,6 +5,10 @@ Quick Start
 
 A easy to use graph module which provides api's for directed unweighted graph. The module camn be easily integrated with your existing codebase. To create a Graph object this module provide Graph class through which you camn instantiate your own graph object.
 
+Usage 
+
+let myGraph = new Graph(5); -- vertex will be from 0 to 4
+
 API Reference 
 
 1. createGraph()
