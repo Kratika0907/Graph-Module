@@ -36,11 +36,12 @@ A easy to use graph module which provides api's for directed unweighted graph. T
 
 let myGraph = new Graph(5); -- vertex will be from 0 to 4
 
-|Function|Description|
-|createGraph|creates the graph from the 2-D matrix|
-|perfromDFS(start,end)|peforms the depth first search on the graph|
-|perfromBFS(start,end)|peforms the breadth first search on the graph|
-|createDirectedLink([vertex1, vertex2])|creates a directed link between the vertex specified|
+Function|Description
+--------|-----------
+createGraph|creates the graph from the 2-D matrix
+perfromDFS(start,end)|peforms the depth first search on the graph
+perfromBFS(start,end)|peforms the breadth first search on the graph
+createDirectedLink([vertex1, vertex2])|creates a directed link between the vertex specified
 
 API Reference 
 
