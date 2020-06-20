@@ -1,5 +1,5 @@
 # Project Title
-Graph Data Structure in JavaScript
+Graph Module
 
 ## Table of Contents
 
@@ -10,12 +10,13 @@ Graph Data Structure in JavaScript
 
 ## About <a name = "about"></a>
 
-A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph.Graphs are used to solve many real-life problems. Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. Graphs are also used in social networks like linkedIn, Facebook. For example, in Facebook, each person is represented with a vertex(or node). Each node is a structure and contains information like person id, name, gender, locale etc.
+* Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph.Graphs are used to solve many real-life problems. Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. Graphs are also used in social networks like linkedIn, Facebook. For example, in Facebook, each person is represented with a vertex(or node). Each node is a structure and contains information. 
 
-BFS is a traversing algorithm where you should start traversing from a selected node (source or starting node) and traverse the graph layerwise thus exploring the neighbour nodes (nodes which are directly connected to source node). You must then move towards the next-level neighbour nodes.
+* BFS is a traversing algorithm where you should start traversing from a selected node (source or starting node) and traverse the graph layerwise thus exploring the neighbour nodes (nodes which are directly connected to source node). You must then move towards the next-level neighbour nodes. 
 
-The DFS algorithm is a recursive algorithm that uses the idea of backtracking. It involves exhaustive searches of all the nodes by going ahead, if possible, else by backtracking.
-Here, the word backtrack means that when you are moving forward and there are no more nodes along the current path, you move backwards on the same path to find nodes to traverse. All the nodes will be visited on the current path till all the unvisited nodes have been traversed after which the next path will be selected.
+* The DFS algorithm is a recursive algorithm that uses the idea of backtracking. It involves exhaustive searches of all the nodes by going ahead, if possible, else by backtracking. All the nodes will be visited on the current path till all the unvisited nodes have been traversed after which the next path will be selected. 
+
+
 
 
 ## Getting Started <a name = "getting_started"></a>
@@ -27,22 +28,23 @@ Javascript enviornment
 
 ### Installing
 
-Install the graph module package from mpm registry
-npm i graph-dev-squad
-Require the module in the file where you want to use either using require or import syntax
-var graph = require('graph-dev-squad');
+npm i <repo>/Linked-List-Module
 
 ## Usage <a name = "usage"></a>
-Graph Module 
-
-
-Quick Start 
 
 A easy to use graph module which provides api's for directed unweighted graph. The module camn be easily integrated with your existing codebase. To create a Graph object this module provide Graph class through which you camn instantiate your own graph object.
 
-Usage 
-
 let myGraph = new Graph(5); -- vertex will be from 0 to 4
+
+|Function|Description|
+|--------|-----------|
+|createGraph|creates the graph from the 2-D matrix|
+|--------|-----------|
+|perfromDFS(start,end)|peforms the depth first search on the graph|
+|--------|-----------|
+|perfromBFS(start,end)|peforms the breadth first search on the graph|
+|--------|-----------|
+|createDirectedLink([vertex1, vertex2])|creates a directed link between the vertex specified|
 
 API Reference 
 
